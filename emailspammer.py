@@ -31,8 +31,8 @@ sign in with ur email account
 
 ''')
 
-prot = input("Enter protocol (smtp.gmail.com for gmail): ")
-
+prot = str(input("Enter protocol (smtp.gmail.com for gmail): "))
+port10 = int(input(" Enter port (587 for Gmail): "))
 
 
 
@@ -42,7 +42,7 @@ upass = input("Enter Your password: ")
 rmail = input("Enter victim\'s Email: ")
 message = input("Enter the message you want to send: ")
 threads1 = input("Enter The amount of threads you want to send: ")
-s = smtplib.SMTP('smtp.gmail.com', 587)
+s = smtplib.SMTP(prot, port10)
 
 s.starttls()
 
