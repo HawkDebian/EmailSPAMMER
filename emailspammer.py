@@ -45,16 +45,16 @@ threads1 = input("Enter The amount of threads you want to send: ")
 
 print("\nspamming "+rmail+"!")
 
+
+s = smtplib.SMTP(prot, port10)
+
+s.starttls()
+
+s.login(uname, upass)
+
+msg = message
+
 for i in range(int(threads1)):
-
-  s = smtplib.SMTP(prot, port10)
-
-  s.starttls()
-
-  s.login(uname, upass)
-
-  msg = message
   s.sendmail(uname, rmail, msg)
-  s.quit()
-
-print("\nspam done!")
+s.quit()
+print("\nspam done1")
