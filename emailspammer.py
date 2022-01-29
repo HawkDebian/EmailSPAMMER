@@ -43,7 +43,7 @@ rmail = input("Enter victim\'s Email: ")
 message = input("Enter the message you want to send: ")
 threads1 = input("Enter The amount of threads you want to send: ")
 
-print("\nspamming "+rmail+" please wait!")
+print("\nspamming "+rmail+"!")
 
 for i in range(int(threads1)):
 
