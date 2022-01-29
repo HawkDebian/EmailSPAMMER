@@ -57,4 +57,4 @@ msg = message
 for i in range(int(threads1)):
   s.sendmail(uname, rmail, msg)
 s.quit()
-print("\nspam done1")
+print("\nspam done!")
