@@ -56,3 +56,5 @@ for i in range(int(threads1)):
   msg = message
   s.sendmail(uname, rmail, msg)
   s.quit()
+
+print("\nspam done!")
