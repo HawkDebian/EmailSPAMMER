@@ -51,7 +51,7 @@ s.login(uname, upass)
 msg = message
 
 for i in range(int(threads1)):
-   s.sendmail(upass, uname, msg)
+   s.sendmail(uname, rmail, msg)
    print("spamming "+rmail)
 
 s.quit()
